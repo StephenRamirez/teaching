@@ -34,5 +34,3 @@ int y;
 
 in the header file where this interface function is placed you to not say what the funciton does but simply initiliaze that it is there and that the 
 class can see it and use it
-
-
