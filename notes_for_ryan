@@ -1,0 +1,9 @@
+this is our place where i will teach ryan how to make iphone apps
+
+@interface <--- this alllows you to declare a class 
+
+ex:  @interface Test : NSObject 
+
+if you noticed the NSObject this is the super class 
+this means the Test class inherits the methods and instance variables from the NSObject class and can use them
+
