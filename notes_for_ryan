@@ -7,3 +7,32 @@ ex:  @interface Test : NSObject
 if you noticed the NSObject this is the super class 
 this means the Test class inherits the methods and instance variables from the NSObject class and can use them
 
+next chapter
+
+you are able to store variables in an object and heres how you do it
+
+ex: @interface Test : NSObject {
+
+int x;
+int y;
+
+}
+
+this means that a number variable x and y are stored within the Test class
+
+now lets say you want to preform a function from the Test class 
+well you would need to define it first so lets make one!
+
+ex: @interface Test : NSObject {
+
+int x;
+int y;
+
+}
+
+-(void)print;
+
+in the header file where this interface function is placed you to not say what the funciton does but simply initiliaze that it is there and that the 
+class can see it and use it
+
+
