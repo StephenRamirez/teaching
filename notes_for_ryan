@@ -7,3 +7,4 @@ ex:  @interface Test : NSObject
 if you noticed the NSObject this is the super class 
 this means the Test class inherits the methods and instance variables from the NSObject class and can use them
 
+sweet, sound relatively simple
