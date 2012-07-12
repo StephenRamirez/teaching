@@ -34,3 +34,6 @@ int y;
 
 in the header file where this interface function is placed you to not say what the funciton does but simply initiliaze that it is there and that the 
 class can see it and containes it
+//(I'm gonna do comments c++ style, since that's what I'm used to)
+//okay, so you initialize the function, but don't tell it what to do? How then does the compiler know what to make the function do? Is it
+//within the NSObject class?
