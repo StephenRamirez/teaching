@@ -59,3 +59,5 @@ This snippet of code says you are implementing code into functions of the Test c
 by re typing the name of the function and then what it does
 
 
+//Okay, so it looks like we've got a class now with two variables in it, x and y, and a function to print "Hello World!" onto the screen. Great.
+//Now how do you put it together?
