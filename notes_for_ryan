@@ -37,3 +37,25 @@ class can see it and containes it
 //(I'm gonna do comments c++ style, since that's what I'm used to)
 //okay, so you initialize the function, but don't tell it what to do? How then does the compiler know what to make the function do? Is it
 //within the NSObject class?
+
+Great Question! next chapter!
+
+now we will go over how to tell the program what the initialized function is going to preform 
+to do this you need to implement the code for the funtion in the main file instead of the header file where the @interface function is located
+
+@implementation <--- this allows you to implement what the funciton are supposed to do
+
+once again this is located in the main file not the header like the previous phrase
+
+ex: @implementation Test
+
+-(void)print {
+
+NSLog("Hello World!");
+
+}
+
+This snippet of code says you are implementing code into functions of the Test class and then you difine them as so
+by re typing the name of the function and then what it does
+
+
