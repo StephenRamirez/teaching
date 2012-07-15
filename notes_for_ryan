@@ -61,3 +61,48 @@ by re typing the name of the function and then what it does
 
 //Okay, so it looks like we've got a class now with two variables in it, x and y, and a function to print "Hello World!" onto the screen. Great.
 //Now how do you put it together? As in, how do you write the code to actually make it compile and print "Hello World!" onto the screen?
+
+another great question! which seems to also go into the next chapter! next chapter!
+
+there are two ways to do this! i will teach both
+
+one is used in the main function
+
+and the other runs using the word self to access the methods without having to create a seperate object
+====================================================================================================================
+
+in the main function you need to create an object to use the preset methods applied to your class.
+
+ex: int main() {
+
+Test *myTest = [[Test alloc] init];
+
+[myTest print];
+
+[myTest release];
+
+}
+
+this allocates the methods and variables and initilizes them so they exsist and are usable
+REMEBER TO RELEASE THE MEMORY OF THE OBJECT YOU CREATED SO THAT THE IPHONE DOESNT EXPLODE 
+although! the new xcode now allows you to not need to release the object for now it does it for you
+=======================================================================================================
+
+now lets go over something you will be seeing alot more often in the xcode development tool 
+
+instead of creating an object to use these variables you can use the word self to refer to the last object that recieved a message in this case thats the object you have been adding to
+you code would not be in the main fuction but in other functions located in the main file for the view controller(the screen at the current point in code for the iphone)
+
+ex: 
+
+-(void)ViewOnDidLoad {
+
+[self print];
+
+}
+
+so basically in xcode there are a bunch of functions placed in the code already that are meant to do certain things
+the one that i put on the screen is performed once the screen loads 
+thus once the screen loads the object that was last refered to which was the one we made is accessed and the method print from that object is performed
+==============================================================================================================================================================
+
