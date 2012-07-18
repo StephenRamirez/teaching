@@ -95,7 +95,7 @@ you code would not be in the main fuction but in other functions located in the 
 
 ex: 
 
--(void)ViewOnDidLoad {
+-(void)ViewDidLoad {
 
 [self print];
 
