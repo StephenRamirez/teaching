@@ -109,3 +109,64 @@ thus once the screen loads the object that was last refered to which was the one
 //okay, relatively simple...
 //do you happen to have like, a picture of what the IDE looks like for programming iPhone apps? I think that might help a little...
 //other than that though, no questions that I can think of, so...next chapter!
+
+I have pictures of it ill send them to you on your phone shortly
+
+Next Chapter - More on the Self Keyword
+
+Now you might ask why put the self keyword before the function and not just only put the name of the function 
+
+Well here is why!
+
+lets say we have the class person!
+
+@interface Person : NSObject {
+
+int height;
+int speed;
+
+}
+
+-(void)setHeight:(int) x;
+-(void)setSpeed:(int) x;
+
+@end
+
+Here is our class!
+Simply put this class has two variables and two setter methods that set those variables
+now lets implement them
+
+@implementation Person;
+
+-(void)setHeight:(int) x {
+
+height = x;
+
+}
+
+-(void)setSpeed:(int) x {
+
+speed = x;
+
+}
+
+@end
+
+Now lets think 
+Pretend we have made two objects according to this class we have just made
+and think of this line of code below
+
+-(void)ViewDidLoad {
+
+[self setHeight:6];
+
+[self setSpeed:40];
+
+}
+
+if you had not put the self keyword there which object would that method be responding to?
+Exactly this means you can have methods within a methods of an object and use the self word to refer to the object that called that method to call more methods
+the self word adapts to the object that uses it so this function would set the height and speed of any object you make and use this method to do so
+
+The self word is very use full that is why i needed to put an extra chapter for it
+===============================================================================================================================================================================
