@@ -23,7 +23,7 @@ speed = x;
 
 -(void)print {
 
-NSLog(@"%i %i",height,speed);
+NSLog("%i %i",height,speed);
 
 }
 
