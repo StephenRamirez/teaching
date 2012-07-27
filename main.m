@@ -34,6 +34,7 @@ int main() {
 NSAutoReleasePool * pool = [[NSAutoReleasePool alloc] init];
 
 Person *stephen,*ryan;
+
 // the expression above is how you could make multiple objects of the same class in one line
 
 stephen = [[Person alloc] init];
