@@ -1,8 +1,1 @@
-teaching
-========
-
-teaching ryan
-
-im goin to teach him objective-c!
-
-EDITED!!!
+I TEACH AS YOU LEARN SO.. IF YOU DONT RESPOND I WONT TEACH
