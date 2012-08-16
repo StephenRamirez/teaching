@@ -272,3 +272,8 @@ EX:
 =================================================================================================================================================================================
 
 now test is only able to be what is inside the enum of months!
+
+//that's super super simple haha. It works exactly like c++ enumerators. Just one question...
+//I believe in c++ if you don't set the first variable = to something, it defaults to (I think) 0. It may be 1, but it defaults to something.
+//Is that true in Objective C too, like, does the first variable in the enumerator default to something, or will it just generate a compiler
+//error if it's not set to anything?
