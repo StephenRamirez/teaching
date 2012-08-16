@@ -170,3 +170,9 @@ the self word adapts to the object that uses it so this function would set the h
 
 The self word is very use full that is why i needed to put an extra chapter for it
 ===============================================================================================================================================================================
+//Ohhh, I just got it. Makes sense now. What's next?
+
+//Sorry I was gone for so long. Just got super busy is all. I'm back now and ready to learn
+//Okay, so, I get what the program here does. It's relatively simple, I can follow it along. There's only one thing I don't quite understand
+//what's the print function display on the screen? like, I get what NSLog does, but I have no idea how to use it. What's up with the
+//@"%i %i" in the function call (the function call for NSLog within the definition of print)?
