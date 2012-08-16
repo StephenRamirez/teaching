@@ -230,3 +230,7 @@ mylabel.text = @"this is a test";
 this will imediatly on load set the label to "this is a test" 
 
 //simple enough. now what?
+//Oh, and one more thing...forgot to mention this in the last update...
+//Sometime before the test for this, could you actually show me on your actual computer how to write these things? That way the test isn't
+//the first app I've ever made...plus I think it would help a lot to actually be able to write and run them in an xcode compiler. So...
+//ya, that'd be nice, if possible.
