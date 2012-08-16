@@ -176,3 +176,55 @@ The self word is very use full that is why i needed to put an extra chapter for 
 //Okay, so, I get what the program here does. It's relatively simple, I can follow it along. There's only one thing I don't quite understand
 //what's the print function display on the screen? like, I get what NSLog does, but I have no idea how to use it. What's up with the
 //@"%i %i" in the function call (the function call for NSLog within the definition of print)?
+===============================================================================================================================================================================
+
+NEXT CHAPTER - UI objects!
+
+these objects are the objects that are visible on the screen to drag and drop
+
+you can simply drag a label to the screen but to make the code edit this label is another story
+
+The Keyword IBOutlet <--- this word links your code to this object!
+
+EX:
+
+@interface Test : NSObject {
+
+IBOutlet UILabel *mylabel;
+
+}
+
+-(void)setLabel;
+
+@end
+
+===============================================================================================================================================================================
+
+now if you go back to the drag and drop sceen in this box on the side you can now link mylabel to the actual label 
+on the screen!
+
+now to edit it!
+
+there are many ways this one is the easiest!
+
+EX:
+
+@implementation Test;
+
+-(void)setLabel {
+
+mylabel.text = @"this is a test";
+
+}
+
+-(void)ViewOnLoad {
+
+[self setLabel];
+
+}
+
+@end
+
+=================================================================================================================================================================================
+
+this will imediatly on load set the label to "this is a test" 
