@@ -234,3 +234,41 @@ this will imediatly on load set the label to "this is a test"
 //Sometime before the test for this, could you actually show me on your actual computer how to write these things? That way the test isn't
 //the first app I've ever made...plus I think it would help a lot to actually be able to write and run them in an xcode compiler. So...
 //ya, that'd be nice, if possible.
+
+=================================================================================================================================================================================
+
+yea of course when i get my mac mini ill show you ill invite you over
+
+Next Chapter! enumurations!
+
+The KeyWord enum <--- lets you declare a variable that hold many constants
+
+EX:
+
+  enum months {
+    jan = 1, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec
+}
+
+=================================================================================================================================================================================
+
+now this above means that a variable month holds all of these variables withion it
+
+also notice that i only declared one variable with a set number
+this is because enumurations if not told otherwize go up in intervals of one therefore feb = 2, mar = 3 and so on
+
+now you are able to access jan, feb, mar.....etc in the code outside of the enum but you are also able to set variables as 
+that enum type
+
+setting variables as a already set enum type makes is so that that variable is resptricted to only what is in the enum type
+
+EX:
+
+   enum months {
+    jan = 1, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec
+}
+
+  enum months test;
+
+=================================================================================================================================================================================
+
+now test is only able to be what is inside the enum of months!
