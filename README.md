@@ -1,1 +1,1 @@
-I TEACH AS YOU LEARN SO.. IF YOU DONT RESPOND I WONT TEACH
+Back, man, don't worry. Ready and willing to learn.
