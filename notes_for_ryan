@@ -336,3 +336,167 @@ EX:
 
 //Sweet. I've used that in c++ too. I forget if it's the same keyword, I'd have to look that up, but the concept is exactly the same. No
 //questions this time. Next topic!!
+
+=================================================================================================================================================================================
+
+Next Chapter! 
+
+This next chapter is very important to objective-c programming and you WILL use alot!
+
+Initialization functions! Now lets think back to when we actually go throught the process of making an object!
+
+EX: Test *myTest = [[Test alloc] init];
+
+=================================================================================================================================================================================
+
+Now if you look at this you can tell an object is created allocated and initialized!
+
+now lets say we want to make a string and store a value inside of it!
+
+you would be used to this
+
+EX:
+
+  NSString *myString = [[NSString alloc] init];
+
+  myString = @"this is a test";
+
+=================================================================================================================================================================================
+
+This way is completely correct and will work but you could do it a different way that will take less code!
+
+EX:
+
+  NSString *myString = [[NSString alloc] initWithFormat:@"this is a test"];
+
+=================================================================================================================================================================================
+
+You can initialize variables with preset methods already put into it with one single line! 
+
+You can also create your own initialization methods if you please by doing the following 
+
+EX:
+
+  @interface Test : NSObject {
+
+  int var1;
+  int var2;
+}
+
+  -(void)setVar1:(int)x andVar2:(int)y;
+  -(id)initWithVar1:(int)x andVar2:(int)y;
+
+  @end
+
+==================================================================================================================================================================================
+
+Now before i show you what to put in the implementation file is is good to point out the return type of the 
+init function!
+
+id <--- is a declaration type to day this variable is an object!
+
+this means that once this function is done it returns an object which could be stored in other objects!
+
+I will go more into this id type declaration after this chapter!
+
+Next the implementation file!
+
+EX:
+
+  @implementation Test;
+
+  -(void)setVar1:(int)x andVar2:(int)y {
+
+        var1 = x;
+        var2 = y;
+  }
+
+  -(id)initWithVar1:(int)x andVar2:(int)y {
+  
+        self = [super init]
+
+        if(self) {
+
+            [self setVar1:x andVar2:y];
+        }
+        
+        return self;
+  }
+  
+  @end
+
+=======================================================================================================================================================================================
+
+
+Another thing to point out is the word super!
+
+super <--- refers all the way back to the parent class 
+
+super refers basically to the class that called it and every class it subclassed all the way to the class that starts it all
+
+so [super init] initilied everyclass starting from the one it started from all the way to NSObject therefore correctly initializing everything
+
+then the make sure this worked the if statement checks to see if anything is inside of self
+
+if there is it calls the method we made before to set the variables refering to the the variabels set in the initialization function!
+
+then it returns self which is the object that is holding all of the allocated space and initialed values inside of it 
+
+Now Lets bring it all together!
+
+EX:
+
+  Test *myTest = [[Test alloc] initWithVar1:5 andVar2:10];
+
+======================================================================================================================================================================================
+
+Now you can overide the init function and change it to make it so that if you want your objects can override the 
+initilization method to ensure that all the variables stored within the object are properly initialized
+
+EX:
+
+  @interface Test : NSObject {
+
+  int var1;
+  int var2;
+}
+
+  -(void)setVar1:(int)x andVar2:(int)y;
+  -(id)initWithVar1:(int)x andVar2:(int)y;
+  -(id)init;
+
+  @end
+
+  @implementation Test;
+
+  -(void)setVar1:(int)x andVar2:(int)y {
+
+        var1 = x;
+        var2 = y;
+  }
+
+  -(id)initWithVar1:(int)x andVar2:(int)y {
+  
+        self = [super init]
+
+        if(self) {
+
+            [self setVar1:x andVar2:y];
+        }
+        
+        return self;
+  }
+  
+  -(id)init {
+  
+      return [self initWithVar1:0 andVar2:0];
+  
+  }
+
+  @end
+
+============================================================================================================================================================================================
+
+Now if you need to further initialize your objects you can overide the other initialization method! or the 
+designated initialization method!
+
