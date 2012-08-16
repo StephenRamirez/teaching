@@ -277,3 +277,62 @@ now test is only able to be what is inside the enum of months!
 //I believe in c++ if you don't set the first variable = to something, it defaults to (I think) 0. It may be 1, but it defaults to something.
 //Is that true in Objective C too, like, does the first variable in the enumerator default to something, or will it just generate a compiler
 //error if it's not set to anything?
+
+=================================================================================================================================================================================
+
+Another great question!
+
+yes the default is 0 but i set it to 1 because january is the 1st month and also its a good example 
+
+Next Chapter - The KeyWord typedef
+
+typedef <--- takes a certain type of declaration and allows you to make variables that difine the same way
+
+EX:
+
+  typedef int number;
+
+=================================================================================================================================================================================
+
+This example above shows that number can now declare variables as an int!
+
+EX:
+
+  typedef int number;
+
+  number first_num;
+  number second_num;
+
+  first_num = 1;
+  second_num = 2;
+
+  NSLog(first_num);
+  NSLog(second_num);
+
+=================================================================================================================================================================================
+
+typedef makes code more organized and makes your intensions for a variable more apperant
+
+you can also typedef an enumuration
+
+EX:
+
+  typedef enum { jan = 1, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec } months;
+
+  months var1;
+  months var2;
+
+=================================================================================================================================================================================
+
+You can also typedef classes to make objects!
+
+EX:
+
+  typedef NSString *stringmaker;
+
+  stringmaker var1, var2, var3
+
+=================================================================================================================================================================================
+
+
+
