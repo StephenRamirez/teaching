@@ -500,3 +500,7 @@ EX:
 Now if you need to further initialize your objects you can overide the other initialization method! or the 
 designated initialization method!
 
+//easy enough. initialization method...almost exactly like constructors in c++. haha the c languages really are similar...
+//just one question though. When you say if(self)...what exactly is it testing? like, I know how if statements work, but when you just
+//put self in it...what makes self true and what makes self false? and is it acting as a function here, or...? I'm slightly confused on how
+//self, which I'm thinking of as an object, can return true or false? Can objects be true/false?
