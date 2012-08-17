@@ -700,13 +700,15 @@ EX:
 
 ============================================================================================================================================================================================
 
-Note that the only file i imported is the Foundation file which is not the file for the classes
+Note that the only file I imported is the Foundation file which is not the file for the classes
 
 The @class KeyWord basically states that an class of this name exist and that its not undeclared and you dont need
 to import header files to use the class preventing problems!
 
-Now in your Ryan and Stephen main file the header file is imported inside of it which means if you import the main file
-you would also import the header file at the same time
+You will notice that i only imported the .h file and not the main file where things where declared
+this is because when the program runs the interface or .h file has everything you need to know about inside the class
+and when the program runs the @implementation in the main files will compile everything correctly giving each function
+declared the ability to do something
 
 so you really only wanna import them once so the @class keyword prevents you from doing that twice
 
@@ -715,8 +717,8 @@ now into the main file!
 EX:
 
     #import "People.h"
-    #import "Ryan.m"  
-    #import "Stephen.m"
+    #import "Ryan.h"  
+    #import "Stephen.h"
 
     @implementaion People;
     //since People has nothing we will just end it
