@@ -601,3 +601,143 @@ You can now access these variables using dot notation!
 
 //oh, that's really nice. I like that. Much simpler...so I'm assuming you need both keywords, @property and @synthesize, to make that work?
 //Like, one is nothing without the other?
+
+============================================================================================================================================================================================
+
+Well one identifies the properties it will be using and one makes the setter getter 
+So i believe it makes the setter getter according to the properties identified!
+
+Next Chapter!
+
+objects...within objects! objectception!
+and the @class KeyWord
+
+Now yes objects can have other objects inside of them and sometimes this can cause problems within the code by over use
+of importing header files!
+
+So im going to show you how to safely put objects within object and use the KeyWord @class
+
+Lets first give you a better example then Test!
+
+EX:
+
+    @interface Ryan : NSObject {
+
+        int x;
+    }
+    
+    -(void)speak;
+
+    @end
+
+============================================================================================================================================================================================
+
+Lets Also make one more class!
+
+EX:
+
+    @interface Stephen : NSObject {
+
+        int x;
+
+    }
+
+    -(void)speak;
+
+    @end
+
+============================================================================================================================================================================================
+
+Now Lets implement both
+
+EX:
+
+    @implementaion Ryan;
+
+    -(void)speak {
+
+      NSLog(@"Hi im Ryan!");
+
+    }
+
+    @end
+
+============================================================================================================================================================================================
+
+EX:
+
+    @implementation Stephen;
+
+    -(void)speak {
+  
+      NSLog(@"Hi im Stephen");
+  
+    }
+
+    @end
+
+============================================================================================================================================================================================
+
+Now Lets just say the ryan interface is in Ryan.h and the Ryan implementation ryan is in Ryan.m 
+and same for Stephen
+
+Now lets say we have another class called people
+
+EX:
+
+    #import <Foundation/Foundation.h>
+
+    @class Ryan;
+    @class Stephen;
+    @interface People : NSObject {
+
+        Ryan *ryan;
+        Stephen *stephen;
+
+    }
+
+    @end
+
+============================================================================================================================================================================================
+
+Note that the only file i imported is the Foundation file which is not the file for the classes
+
+The @class KeyWord basically states that an class of this name exist and that its not undeclared and you dont need
+to import header files to use the class preventing problems!
+
+Now in your Ryan and Stephen main file the header file is imported inside of it which means if you import the main file
+you would also import the header file at the same time
+
+so you really only wanna import them once so the @class keyword prevents you from doing that twice
+
+now into the main file!
+
+EX:
+
+    #import "People.h"
+    #import "Ryan.m"  
+    #import "Stephen.m"
+
+    @implementaion People;
+    //since People has nothing we will just end it
+    @end
+
+    People *coolPeople = [[People alloc] init];
+
+    coolPeople.ryan = [[Ryan alloc] init];
+    coolPeople.stephen = [[Stephen alloc] init];
+
+    [coolPeople.ryan speak];
+    [coolPeople.stephen speak];
+
+    [[coolPeople ryan] release];
+    [[coolPeople stephen] release];
+
+    [coolPeople release];
+
+=======================================================================================================================================================================================================
+
+now notice that we had to release ryan and stephen before the object that held them
+
+if you release the object that held them before this that does not automatically release ryan and stephen
+
