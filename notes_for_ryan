@@ -504,3 +504,42 @@ designated initialization method!
 //just one question though. When you say if(self)...what exactly is it testing? like, I know how if statements work, but when you just
 //put self in it...what makes self true and what makes self false? and is it acting as a function here, or...? I'm slightly confused on how
 //self, which I'm thinking of as an object, can return true or false? Can objects be true/false?
+
+============================================================================================================================================================================================
+
+When the if statement checks self it also checks to see if it is a zero or nonzero return value
+since we allocated and initialed variables into this object it returns a non zero value becuase something is inside of it
+
+Next Chapter!
+
+The declaration of id!
+
+id <--- as mentioned previously is how to declare an object of anytype
+
+Now the question also comes up that why wouldnt you just make every object your using an id type
+well heres the answer
+
+EX:
+
+  NSString *word1;
+
+  id word2;
+
+============================================================================================================================================================================================
+
+Ask yourself which ones intensions are more apperant?
+
+This is not to say id is bad but dont over use it!
+
+EX:
+
+  word1 = [[NSString alloc] init];
+  word2 = [[NSString alloc] init];
+
+============================================================================================================================================================================================
+
+These are both acceptable answers!
+
+word2 will also be able to access all of NSStrings variables and functions
+just as a normal string would
+
