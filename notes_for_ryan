@@ -545,3 +545,57 @@ just as a normal string would
 
 //Okay, simple enough. Question was answered perfectly, btw. Now I get it. Was just confused as to where the zero/nonzero value came from,
 //but now it makes sense. Next Chapter!
+
+============================================================================================================================================================================================
+
+Next Chapter!
+
+KeyWord @property and @synthesize 
+
+@property <--- this keyword identifies the properties of the variable we will be dealing with
+@synthesize <--- generates a setter getter method for us
+
+recently you have been making methods to set variables and get variables but now i will show you a different way
+
+EX:
+
+  @interface Test : NSObject {
+
+      int x;
+      int y;
+
+  }
+  
+  @property int x, y;
+
+  @end
+
+============================================================================================================================================================================================
+
+This identifies the properties of the variables we have declared in out class
+
+Now to generate a setter and getter function
+
+EX:
+
+  @implementation Test;
+
+  @synthesize x, y;
+
+  @end
+
+============================================================================================================================================================================================
+
+Now to use them!
+
+EX:
+    
+    Test *myTest = [[Test alloc] init];
+
+    myTest.x = 5;
+    myTest.y = 10;
+
+============================================================================================================================================================================================
+
+You can now access these variables using dot notation!
+
