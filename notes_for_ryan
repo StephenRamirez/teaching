@@ -572,7 +572,7 @@ EX:
 
 ============================================================================================================================================================================================
 
-This identifies the properties of the variables we have declared in out class
+This identifies the properties of the variables we have declared in our class
 
 Now to generate a setter and getter function
 
@@ -599,3 +599,5 @@ EX:
 
 You can now access these variables using dot notation!
 
+//oh, that's really nice. I like that. Much simpler...so I'm assuming you need both keywords, @property and @synthesize, to make that work?
+//Like, one is nothing without the other?
