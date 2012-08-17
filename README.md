@@ -1,1 +1,1 @@
-Back, man, don't worry. Ready and willing to learn.
+ALL WHO WANT TO LEARN HOW TO WRITE APPS READ THIS LESSON!
