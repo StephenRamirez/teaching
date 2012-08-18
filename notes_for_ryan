@@ -702,7 +702,7 @@ EX:
 
 Note that the only file I imported is the Foundation file which is not the file for the classes
 
-The @class KeyWord basically states that an class of this name exist and that its not undeclared and you dont need
+The @class KeyWord basically states that a class of this name exists and that it's not undeclared and you dont need
 to import header files to use the class preventing problems!
 
 You will notice that i only imported the .h file and not the main file where things where declared
@@ -743,3 +743,4 @@ now notice that we had to release ryan and stephen before the object that held t
 
 if you release the object that held them before this that does not automatically release ryan and stephen
 
+//which would cause problems haha. I'm gettin the hang of this...next lesson!
