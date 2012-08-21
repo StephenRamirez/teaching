@@ -813,3 +813,5 @@ Third!
 
 ===============================================================================================================================================================================================================================
 
+//okay, that all makes sense...well, except one thing. There's no loop...so how does it keep going back through that code? I think it's just
+//an x-code thing, like, it runs that code whenever the button is pressed? but I'm not really sure...
