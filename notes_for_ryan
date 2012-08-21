@@ -744,3 +744,72 @@ now notice that we had to release ryan and stephen before the object that held t
 if you release the object that held them before this that does not automatically release ryan and stephen
 
 //which would cause problems haha. I'm gettin the hang of this...next lesson!
+
+=======================================================================================================================================================================================================
+
+Next Chapter!
+
+The static KeyWord
+
+static <--- gives a variables being declared the ability to only be declared once!
+
+This KeyWord is very usefull and can be used in many different places!
+
+EX:
+
+    -(IBAction)buttonPressed:(id)sender {
+
+          static int count = 0;
+
+              if(!count) {
+
+                    NSLog(@"the count is at 0!");
+                    count++;
+
+              }   
+    
+              else if(count) {
+
+                    NSLog(@"the count is at 1!");
+                    count--;
+
+              }
+
+              else {
+
+                    NSLog(@"error!");
+
+              }
+
+      }
+
+===============================================================================================================================================================================================================================
+
+Now there are three things in the code above that i should explain 
+
+First!  IBAction is the return type of this buttonPressed function 
+
+Now when your program is created there is a sreen that all of these functions will be on and that screen
+is checking for events, one of these events is this IBAction 
+
+This code could be linked to a button on the screen 
+
+Second!
+
+      You may be thinking to yourself well if i press the button twice its gonna go back over the code initializing the
+count variable back to 0 right?
+
+Well no it will not do that because of the KeyWord Static! it will declare it once then never again!
+
+So if you press it once! it goes to the if statement!
+if you press it twice it goes to the else if statement!
+if you press it again it goes back to the if statement!
+
+Third!
+
+    you may have noticed the if(!count)
+
+    That checks for a NONZERO return value!
+
+===============================================================================================================================================================================================================================
+
