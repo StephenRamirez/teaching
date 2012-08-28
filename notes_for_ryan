@@ -815,3 +815,62 @@ Third!
 
 //okay, that all makes sense...well, except one thing. There's no loop...so how does it keep going back through that code? I think it's just
 //an x-code thing, like, it runs that code whenever the button is pressed? but I'm not really sure...
+
+===============================================================================================================================================================================================================================
+
+I answered your questoins in school!
+
+Next Chapter!
+
+Class methods!
+
+now previously when declaring methods of a class you used the - sign before declaring them 
+
+EX:
+
+-(void)print;
+
+===============================================================================================================================================================================================================================
+
+Now before telling you how to actually use make class methods there is something worth knowing
+you cannot use instance variables of that class in your class methods!
+
+Now to show you how to make them!
+
+EX:
+
++(id)allocf;
+
+===============================================================================================================================================================================================================================
+
+now the only real difference here is that before the method there is a + sign now!
+
+this means that the class name can use this method!
+
+Nw to define it!
+
+EX:
+
++(id)allocf {
+
+NSLog("hi!");
+
+return [Test alloc];
+
+}
+
+===============================================================================================================================================================================================================================
+
+Now you have a allocation method that also does more!
+
+EX:
+
+Test *myTest = [[Test allocf] init];
+
+[myTest release];
+
+===============================================================================================================================================================================================================================
+
+You can use this in games to count how many computers you have spawned in a game by making a counter in the allocation method 
+so each time an object is created the counter goes up!
+
